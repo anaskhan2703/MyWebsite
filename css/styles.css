@@ -1,8 +1,103 @@
+@media (max-width:426px) {
+    div.mainabout h1{
+        font-size: 45px;
+        margin-top: 120px;
+    }
+     div.mainabout h3{
+        font-size: 16px;
+        margin-top: -19px;
 
+     }
+     div.mainabout h5{
+        font-size: 20px;
+        margin-top: -15px;
+        margin-left: 50px;
+        margin-right: 50px;
+        line-height: 1em;
+     }
+     div#educationtitle {
+        margin-top: -100px;
+     }
+     div.HS div.flex_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    div.HS div.flex_container div.small{
+        margin-top: -100px;
+    }
+    div.HS{
+        font-size: 15px;
+    }
+    div.HS img{
+        width: 300px;
+    }
+    div.Uni div.bigflex{
+        display: flex;
+        flex-direction: column;
+        align-items: left   ;    
+        margin-left: 60px;
+        margin-right: 20px;
+    }
+    div.Uni div.bigflex div.smallflex{
+        margin-top: -50px;
+    }
+    div.Uni{
+        font-size: 15px;
+    }
+    div.Uni img{
+        width: 300px;
+    }
+    div.container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;    
+    }
+    div.MCD{
+        margin-bottom: 15px;
+    }
+    div.York{
+        margin-bottom: 15px;
+    }
+    div.York img{
+        width: 230px;
+    }
+    div.deploybot{
+        margin-left: 00px;
+        margin-right: 0px;
+    }
+    div.deploybot hr{
+        width: 300px;
+    }
+    div.deploybot h4{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    div.deploybot ul.disclist li{
+        padding: 5px;
+        margin-right: 0px;
+        margin-left: 5px;
+    }
+    div.deploybot div.lmath ul.androidlist li{
+        padding: 5px;
+        margin-right: 0px;
+        margin-left: 5px;   
+    }
+    div.contact{
+    margin: 0px;
+    text-align: center;    
+}
+@media (max-width: 376px){
+    div.Uni {
+        margin-left: -30px;
+    }
+} 
+}
 body{
-    background-color:#ffffff;
     color:gray;
-
     font-family: 'Varela Round', sans-serif;
     font-size: 32px;
     font-weight: 800;
@@ -10,24 +105,25 @@ body{
     line-height: 1.5em;
 }
 .mainHeader{
+    display: flex;
     background-color: black;
     color: white;
-    /* padding: 10px; */
     font-size: 12px;
-    /* margin: -10px; */
     font-family: 'Varela Round', sans-serif;
 
 }
 .mainHeader h1{
-    margin-left: 50px;
-    display: inline;
+    display: block;
+    justify-content: start;
+    align-self: center;
+    margin: 20px;
 }
+
 .mainHeader ul{
-padding: 0px;
-list-style: none;
-display: inline;
-margin-left: 650px;
-font-size: 20px;
+    margin-left: auto;
+    list-style: none;
+    font-size: 20px;
+    padding: 0px;
 }
 .mainHeader li{
     display:inline;
@@ -54,31 +150,27 @@ font-size: 20px;
 
 }
 .mainabout h1{
-    margin-left: 200px;
-    margin-top: 300px;
-    margin-bottom: -40px;
     color: black;
     font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    margin-top: 15rem;
 }
 .mainabout h3{
     font-size: 28px;
     margin-top: 40px;   
-    margin-left: 200px;
     color: grey;
+    text-align: center;
 }
 .mainabout h5{
     font-size: 28px;
     margin-top: -40px;   
-    margin-left: 200px;
+    /* margin-left: 200px; */
     color: black;
+    text-align: center;
+    display: block;
+    margin-bottom: 240px;
 }
-.mainabout img{
-    margin-top: -300px;
-    margin-left: 800px;
-    height: 400px;
-    object-fit: contain;
-}
-.educationtitle{
+#educationtitle{
     margin-top: 150px;
     text-align: center;
     color:black
@@ -87,7 +179,7 @@ font-size: 20px;
 .HS .flex_container{
     display: flex;
     margin-top: 100px;
-    justify-content:start;
+    justify-content:space-around;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -96,8 +188,15 @@ font-size: 20px;
     flex-direction: column;
     align-items: start;
 }
+.HS h2{
+    color: black;
+}
+.HS i{
+    color: black;
+}
 .HS h4{
     margin-top: -40px;
+    color: black;
 }
 .HS img{
     border: 5px;
@@ -105,15 +204,14 @@ font-size: 20px;
     border-radius: 50px;
     border-color: black ;
     width: 400px;
-    margin-left: 200px;
    
 }
 .Uni .bigflex{
     display: flex;
-    margin-top: 100px;
-    justify-content:start;
-    margin-left: 50px;
-    margin-right: 50px;
+    justify-content:space-between;
+    margin-top: 50px;
+    margin-left: 135px;
+    margin-right: 135px;
 }
 .Uni .bigflex .smallflex{
     display: flex;
@@ -127,12 +225,12 @@ font-size: 20px;
     border-radius: 50px;
     border-color: black ;
     width: 400px;
-    margin-left: 525px;
 }
-.xptitle{
+#xptitle{
     text-align: center;
     margin-top: 100px;
     margin-bottom: 50px;
+    color: black;
 }
 .container{
     margin-top: 50px;
@@ -149,6 +247,7 @@ font-size: 20px;
     border-radius: 25px;
     text-align: center;
     background-color: azure;
+    color: black;
 }
 .MCD img{
     width: 200px;
@@ -168,6 +267,7 @@ font-size: 20px;
     border-radius: 25px;
     text-align: center;
     background-color: azure;
+    color: black;
 }
 .York img{
     width: 200px;
@@ -189,6 +289,7 @@ font-size: 20px;
     text-align: center;
     padding-bottom: 0%;
     background-color: azure;
+    color: black;
 }
 .UC img{
     width: 200px;
@@ -199,15 +300,29 @@ font-size: 20px;
 .UC .UCtitle .UCskills{
     font-size: 24px;
 }
+#projecttitle{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: black;
+}
 .deploybot{
+    text-align: center;
     margin-left: 350px;
-    margin-right: 350px;
+    margin-right: 350px; 
+}
+.deploybot hr{
+    color: bl;
 }
 .deploybot h2{
     text-align: center;
 }
+.deploybot .disc{
+   color: #5865F2; 
+}
 .deploybot h4{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: black;
 }
 .deploybot ul{
     padding: 0px;
@@ -215,67 +330,84 @@ font-size: 20px;
     display: inline;
     font-size: 20px;
     margin-top: -50px;
-    }
-    .deploybot ul li{
+
+}
+.deploybot ul li{
         display: inline;
+        padding: 5px;
         margin-right: 50px;
-    }
-/* .deploybot ul li{
-        display:inline;
-        margin: 20px;
-        text-decoration: none;
-    } */
-/* .highschool{
-    margin-left: 150px;
-    font-size: 32px;
+        border: 5px;
+        border-style: solid;
+        border-color: gray;
+        background-color: gray;
+        color: white;
+        border-radius: 20px;
+}
+.deploybot .disclist li{
+    display: inline;
+    padding: 5px;
+    margin-right: 50px;
+    border: 5px;
+    border-style: solid;
+    border-color: #5865F2;
+    background-color: #5865F2;
+    color: white;
+    border-radius: 20px;
+}
+.deploybot .lma{
+    color: #3DDC84;
+}
+.deploybot .androidlist li{
+    display: inline;
+    padding: 5px;
+    margin-right: 50px;
+    border: 5px;
+    border-style: solid;
+    border-color: #3DDC84;
+    background-color: #3DDC84;
+    color: white;
+    border-radius: 20px;
+}
+.contact{
+    margin-left: 350px;
+    margin-right: 350px;
+    text-align: center;
+    color: black;
+}
+.contact .socials a{
+    font-size: 50px;
+    color: black;
     
 }
-.highschooldate{
-    font-size: 24px;
-}
-.highschooldate img{
-    border: 5px;
-    border-style:solid;
-    border-radius: 50px;
-    border-color: black ;
-    width: 400px;
-    margin-left: 800px;
-    margin-top: -100px;
-}
-.highschool hr{
-    margin-top: 50px;
-    margin-left: -1px;
-    width: 1200px;
+.contact .socials a:visited{
+    font-size: 50px;
     color: black;
-    border: 4px solid;
-  border-radius: 5px;
-
-.university h1{
-    margin-top: 50px;
-    margin-left: 150px;
-    font-size: 32px;
+    
+}
+.footer{
+    background-color: black;
+ bottom: 0;
+ width: 100%;
+ font-size: 16px;
+ margin-top: 25px;
+}
+.footer h1{
+    text-align: center;
     color: white;
 }
-.university h5{
-    margin-top: -5px;
-    margin-left: 150px;
-    font-size: 32px;
+.footer .footcontainer{
+    display: flex;
+    justify-content: space-around;
 }
-.university .universitysection{
-    margin-left: 150px;
-    margin-top: -60px;
-    font-size: 24px;
+.footer .footcontainer a{
+    font-size: 50px;
+    color: white;
+    background-color: black;
+    margin-top: 15px;
+}
+.footer .footcontainer button{
+    font-size: 50px;
+    color: white;
+    background-color: black;
+}
 
-}
-.university .lassonde{
-    border: 5px;
-    border-style:solid;
-    border-radius: 50px;
-    border-color: black ;
-    width: 400px;
-    margin-left: 800px;
-    margin-top: -100px;
-}
-.university h3{
-    display: block;
-} */

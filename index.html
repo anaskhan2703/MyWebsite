@@ -4,54 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <title>Anas Khan</title>
     <link rel="stylesheet" href="css/styles.css" />
     <style>@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
     </style>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src = "app.js"></script>
   </head>
   <body>
-    <nav class="mainHeader">
-      <h1>Anas Khan</h1>
+    <div class="mainHeader">
+      <h1 ID ="intro">Anas Khan</h1>
       <ul>
-        <li><a href ="https://discord.gg/RAReJ4ev">Home</a></li>
-        <li><a href ="#">Education</a></li>
-        <li><a href ="#">Experience</a></li>
-        <li><a href ="#">Projects</a></li>
-        <li><a href ="#">Contact</a></li>
+        <li><a href ="#intro">Home</a></li>
+        <li><a href ="#educationtitle">Education</a></li>
+        <li><a href ="#xptitle">Experience</a></li>
+        <li><a href ="#projecttitle">Projects</a></li>
+        <li><a href ="#contactid">Contact</a></li>
+        <button><i class="uil uil-sun"></i></button>
       </ul>
-      <button><i class="uil uil-sun"></i></button>
-      </button>
     </div>
-    </nav>
         <div class="mainabout">
         <h1>Hey, I'm Anas!</h1> 
-        <h3>Computer Science Student</h3>
-        <h5>hello</h5>
-        <img src="./images/me1.jpg" alt="">
+        <h3>Second year computer science Student</h3>
+        <h5>Web and mobile application developer pursuing a career in software engineering </h5>
+        <!-- <div class = "myself"><img src="./images/myself part 2.jpg" alt=""> </div> -->
         </div>
         <!--===============================Education============================-->
-        <!-- <div class="Education">
-        <p class="educationtitle">Education</p>
-        <div class="highschool">
-          <div class = "highschoolname">Heart Lake Secondary School</div>
-          <div class = "highschooldate"><i class="uil uil-calendar-alt"></i> 2017 - 2021
-            <i class="uil uil-location-point"></i> Brampton, ON 
-           <img src ="images/HeartLake.JPG" alt = "">
-            <hr>
-          </div>
-        </div>
-          <div class = "university">
-            <h1>York University</h1>
-            <h5>York University / Lassonde School of Engineering</h2>
-            <div class = "universitysection"><i class="uil uil-calendar-alt"></i> 2021 - 2026
-              <i class="uil uil-location-point"></i> North York, ON
-              <h3>Notable courses: Discrete Mathematics, Calculus 1 & 2, Object Oriented Programming</h3>
-              <img class = "lassonde" src ="images/lassonde.jpg" alt = "">
-            </div>
-          </div>
-        </div> -->
-        <div class = educationtitle>Education</div>
+        <div id = educationtitle>Education</div>
         <div class = HS>
           <div class = flexbox>
           <div class = flex_container>
@@ -68,7 +47,7 @@
             <div class="smallflex">
               <div class = "Uniinfo"><h2>York University</h2>
                 <h4><i class="uil uil-location-point"></i> North York, ON</h4>
-                <h4><i class="uil uil-calendar-alt"></i> 2021 - 2026</h4>
+                <h4><i class="uil uil-calendar-alt"></i> 2021 - Present</h4>
               </div>
             </div>
             <img src = "images/lassonde.jpg" alt = "">
@@ -76,11 +55,11 @@
           </div>
         </div>
       </div>
-      <div class="xptitle">Experience</div>
+      <div id="xptitle">Experience</div>
       <div class = "container">
         <div class="MCD">
           <div class = title>
-            <h4><img src = "images/mcdonalds.png" alt = "">McDonald's</h4>
+            <h4><img src = "images/mcdonalds.jpg" alt = "">McDonald's</h4>
             <h4><i class="uil uil-suitcase"></i></i> Crew Trainer</h4>
             <div class="mcdskills">
               <h4><i class="uil uil-star"></i> Teamwork <i class="uil uil-star"></i> Responsibility</h4>
@@ -106,22 +85,52 @@
         </div>
       </div>
       </div>
-      <div class="xptitle">Projects</div>
+      <div id="projecttitle">Projects</div>
       <div class = deploybot>
         <hr>
-        <h2><i class="uil uil-discord"></i> Deploy bot</h2>
+        <h2 class ="disc"><i class="uil uil-discord"></i> Deploy bot</h2>
         <h4>DeployBot is a discord bot that moderates discord
           servers as well as allowing users in the server to
           engage in fun activities such as playing a game of tictac-toe, getting new wallpapers for their
           profile picture, 8ball replies, and finally a who-am-I
           anime characters. Moreover, DeployBot
           delivers real-time stock and crypto prices</h4>
-          <ul>
+          <ul class = "disclist">
             <li>Node.js</li>
-            <li>Sports</li>
-            <li>ok</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+            <li>Heroku</li>
           </ul>
+          <div class="lmath">
+            <h2 class = "lma"><i class="uil uil-android"></i> Lightning Math App</h2>
+            <h4>Time-based math game where the user has to solve
+              the given math problem before a set time and
+              continue the answer streak</h4>
+              <ul class = "androidlist">
+                <li>Android Studio</li>
+                <li>Java</li>
+                <li>Figma</li>
+                <li>Git</li>
+              </ul>
+              <hr>
+          </div>
+      </div>
+      <div class="contact">
+        <h2 id="contactid">Contact</h2>
+        <div class = socials> 
+        <a href = "https://www.linkedin.com/in/anaskhan2703" target = "_blank"><i class="uil uil-linkedin"></i></a>
+        <a href = "https://github.com/anaskhan2703" target = "_blank"><i class="uil uil-github"></i></a> 
+        <a href="mailto:anaskhan2703@gmail.com" target = "_blank"><i class="uil uil-envelope"></i></a>
       </div>
       </div>
+      <footer class = "footer">
+        <div class = "footcontainer">
+        <a href = "#intro"><button><i class="uil uil-arrow-circle-up"></i></button></a>
+        <h1>Designed by: Anas Khan</h1>
+        <a href = "#intro"><button><i class="uil uil-arrow-circle-up"></i></button></a>        
+      </div>
+      </footer>
+      
     </body>
+    
 </html>
